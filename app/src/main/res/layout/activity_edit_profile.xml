@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".postAuth.EditProfileActivity"
+android:background="@drawable/background"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <!--        <TableLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:padding="20dp"-->
+    <!--            android:stretchColumns="1">-->
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/id_drawer_email_textView"
+            android:layout_width="313dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            android:text="@string/editprofile"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/id_EditProfile_ImageView"
+            android:layout_width="119dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="131dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="131dp"
+            app:circularflow_defaultRadius="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_drawer_email_textView"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            app:srcCompat="@drawable/appicon" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdiTextFnameEditProfile"
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/id_EditProfile_ImageView"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEdiTextLnameEditProfile"
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEdiTextFnameEditProfile"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEditprofilePhoneNumberEditText"
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEdiTextLnameEditProfile"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEditProfileCityEditText"
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/city"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEditprofilePhoneNumberEditText"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/idEditProfileAddressEditText"
+            android:layout_width="345dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEditProfileCityEditText"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/idSubmitButtonEditProfile"
+            android:layout_width="345dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/common_primary_button"
+            android:text="@string/submit"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idEditProfileAddressEditText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--        </TableLayout>-->
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

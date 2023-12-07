@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/id_nav_myappointments">
+
+
+    <fragment
+        android:id="@+id/id_nav_mycars"
+        android:name="com.csis.drivedoctor.postAuth.MyCarsFragment"
+        android:label="@string/myCars"
+        tools:layout="@layout/fragment_my_cars" />
+
+    <fragment
+        android:id="@+id/id_nav_myclients"
+        android:name="com.csis.drivedoctor.postAuth.MyClientsFragment"
+        android:label="@string/myclients"
+        tools:layout="@layout/fragment_myclients" />
+
+
+    <fragment
+        android:id="@+id/id_nav_myappointments"
+        android:name="com.csis.drivedoctor.postAuth.MyAppointmentsFragment"
+        android:label="@string/myAppointments"
+        tools:layout="@layout/fragment_my_appointments" />
+
+
+</navigation>

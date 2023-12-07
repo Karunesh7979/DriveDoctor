@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <CheckBox
+        android:id="@+id/id_signup_dropOffNeeded"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="36dp"
+        android:buttonTint="#F6F1F1"
+        android:text="@string/dropOffNeeded"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_signup_pickupNeeded" />
+
+    <CheckBox
+        android:id="@+id/id_signup_pickupNeeded"
+        android:layout_width="154dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="27dp"
+        android:buttonTint="#F6F1F1"
+        android:text="@string/pickupNeeded"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBookAppointmentActivityDes" />
+
+    <TextView
+        android:id="@+id/idBookAppointmentActivityProviderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="31dp"
+        android:gravity="center"
+        android:text="@string/abcServiceProvider"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idBookAppointmentActivityDate"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="31dp"
+        android:autofillHints=""
+        android:background="@android:color/white"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+        android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:hint="@string/pickDate"
+        android:inputType="date|datetime"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A2A2"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBookAppointmentActivityProviderName"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/idBookAppointmentActivityDes"
+        android:layout_width="352dp"
+        android:layout_height="167dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/description"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColorHint="#A8A2A2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBookAppointmentSelectServiceType"
+        tools:ignore="TextContrastCheck"
+        tools:textSize="20sp" />
+
+    <Button
+        android:id="@+id/idBookAppointmentActivityAddbtn"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/common_primary_button"
+        android:text="@string/addBooking"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/idBookAppointmentActivityAmount"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="31dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/amount"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="#A8A2A2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBookAppointmentActivityDate"
+        tools:ignore="TextContrastCheck,TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/idBookAppointmentSelectServiceType"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:entries="@array/car_services"
+        android:foregroundTint="#0B0A0A"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBookAppointmentActivityAmount"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

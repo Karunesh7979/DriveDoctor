@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:drawable="@drawable/splash"/>
+    <item>
+        <shape android:shape="rectangle" android:padding="0dp">
+          <solid android:color="#E11C1B1B"/>
+        </shape>
+    </item>
+</layer-list>
+

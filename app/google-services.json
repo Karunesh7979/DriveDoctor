@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605230683494",
+    "project_id": "drivedoctor-a428e",
+    "storage_bucket": "drivedoctor-a428e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605230683494:android:7459b696310bc7719ee4a7",
+        "android_client_info": {
+          "package_name": "com.csis.drivedoctor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1qP78UwiOgggqDd_F7NXT5orAPPouLmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
